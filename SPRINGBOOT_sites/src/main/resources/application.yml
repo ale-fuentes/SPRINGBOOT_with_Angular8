@@ -1,0 +1,13 @@
+spring:
+  datasource:
+    password: guest
+    username: guest
+    url: jdbc:mysql://localhost:3306/sitedb?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC
+  jpa:
+    hibernate:
+      ddl-auto: create
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL8Dialect
+        format_sql: true
+    show-sql: true
